@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;700&display=swap");
+
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+  --heebo: "Heebo", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --300: 300;
+  --400: 400;
+  --500: 500;
+  --700: 700;
+  --800: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.logoText,
+.footorLogo {
+  font-family: var(--heebo);
+  font-size: 2.25rem;
+  font-weight: var(--800);
+  margin-top: 2.625rem;
+  margin-left: 3.25rem;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  width: 44.125rem;
+  height: 2.25rem;
+  /* justify-content: space-between; */
+  margin-top: 3.1875rem;
+  margin-right: 3.5rem;
+  gap: 2.5rem;
+}
+
+a {
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #333333;
+}
+
+.heroTop {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.heroTop h3 {
+  font-family: var(--poppins);
+  font-weight: --500;
+  font-size: 1.125rem;
+  color: #2d9cdb;
+  margin-top: 6.5rem;
+  margin-left: 17.3125rem;
+}
+.heroTopContent {
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 17.3125rem;
+  line-height: 4.5rem;
+}
+.heroImg {
+  background-image: url(./heroImage.jpg);
+  background-size: cover;
+  height: 22.125rem;
+  width: 83.25rem;
+  max-width: 1332px;
+  margin-left: 3.25rem;
+  margin-right: 3.5rem;
+  margin-top: 2.5625rem;
+  border-radius: 1.125rem;
+}
+
+.heroBottomContent {
+  margin-left: 17.3125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5625rem;
+}
+.heroBottomContent h2 {
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  font-size: 3rem;
+  line-height: 4.5rem;
+  margin-top: 2.5625rem;
+}
+.heroBottomContent article {
+  width: 22.875rem;
+  height: 8.5625rem;
+}
+.heroBottomContent article p {
+  font-family: var(--poppins);
+  font-weight: var(--400);
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.emailContainer label {
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  font-size: 0.875rem;
+  color: #828282;
+}
+.emailInputContainer {
+  position: relative;
+  height: 3.5625rem;
+  width: 21.875rem;
+  align-items: center;
+  display: flex;
+  margin-top: 0.5625rem;
+}
+.emailInputContainer input[type="email"] {
+  background: #f2f2f2;
+  padding-right: 1.25rem;
+  height: 100%;
+  border: none;
+  outline: 0;
+  padding-left: 1.3125rem;
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+.emailInputContainer button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3.0625rem;
+  border-radius: 0.75rem;
+  width: 5.875rem;
+  border: none;
+  background-color: #2d9cdb;
+  color: #f2f2f2;
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin: 0.25rem 0.25rem;
+}
+
+/*--------------------------- services section ---------------- */
+
+.servicesContent {
+  font-family: var(--poppins);
+  font-size: 36px;
+  margin-left: 165px;
+  margin-top: 200px;
+  font-weight: var(--500);
+  width: 346px;
+  height: 108px;
+  line-height: 54px;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 165px;
+  gap: 5px;
+}
+.card {
+  height: 422px;
+  width: 341px;
+  padding: 46px 34px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.edit,
+.code,
+.storage {
+  height: 67px;
+  width: 67px;
+  border-radius: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.edit {
+  background-color: #2d9cdb;
+}
+.code {
+  background-color: #27ae60;
+}
+.storage {
+  background-color: #eb5757;
+}
+
+.title {
+  font-family: var(--poppins);
+  font-weight: var(--700);
+  font-size: 24px;
+  margin-top: 35px;
+}
+.card p {
+  padding: 29px 0 30px 0;
+  font-family: var(--poppins);
+  font-weight: var(--400);
+  font-size: 1rem;
+}
+
+.cardBtn {
+  padding: 9px 12px 9px 13px;
+  font-size: 1rem;
+  font-weight: var(--500);
+  font-family: var(--poppins);
+  background-color: #e0e0e0;
+  color: #828282;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.card:hover {
+  box-shadow: 0px 10px 30px 0px #3333331a;
+  transition-duration: 0.4s;
+}
+.card:hover .cardBtn {
+  color: #ffffff;
+  background-color: #2d9cdb;
+  transition-duration: 0.4s;
+}
+
+/* ---------------------------------portfolio----------------------------- */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.portfolioTitle {
+  font-family: var(--poppins);
+  font-weight: var(--500);
+  font-size: 36px;
+  line-height: 54px;
+  height: 108px;
+  width: 448px;
+  margin: 194px auto auto 165px;
+}
+.portfolioCard {
+  height: 656px;
+  width: 545px;
+  flex-basis: calc(50% - 1px);
+}
+.portfolioCard img {
+  border-radius: 12px;
+  max-width: 545px;
+  max-height: 545px;
+  margin-bottom: 20px;
+}
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1110px;
+  height: 1610px;
+  margin-left: 165px;
+  margin-top: 12px;
+}
+
+.card1 {
+  margin-top: 176px;
+}
+
+.card3 {
+  margin-top: 105px;
+}
+
+.portfolioCard label {
+  font-family: var(--poppins);
+  font-weight: var(--300);
+  font-size: 14px;
+  color: #828282;
+}
+.portfolioCard h3 {
+  font-family: var(--poppins);
+  font-size: 24px;
+  font-weight: var(--500);
+}
