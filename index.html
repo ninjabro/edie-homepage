@@ -34,7 +34,7 @@
           </h2>
         </div>
         <div class="heroImg">
-          <!-- <img src="./heroImage.jpg" alt="" /> -->
+          <img src="./heroImage.jpg" alt="" />
         </div>
         <div class="heroBottomContent">
           <h2 class="heading">
@@ -128,13 +128,15 @@
       <section class="team">
         <div class="teamContent">
           <h6>Meet the team</h6>
-          <h2>We are chilled and a laidback team</h2>
+          <div class="title_team">
+            <h2>We are chilled and a laidback team</h2>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="pictureContainer">
-          <img src="./person3.png" alt="" />
-          <img src="./person1.png" alt="" />
-          <img src="./person2.png" alt="" />
+          <img class="photo1" src="./person3.png" alt="" />
+          <img class="photo2" src="./person1.png" alt="" />
+          <img class="photo3" src="./person2.png" alt="" />
         </div>
       </section>
       <section class="testimopnial" id="clients1" name="clients1">
@@ -142,40 +144,49 @@
           “Fast and outstanding resutls. Edie understands their customer’s
           needs. They have a young and talented team.”
         </p>
-        <div class="profilecard">
-          <img src="./person4.png" alt="" />
-          <h3 class="name">Carlos Tran</h3>
-          <p>The Decorate Gatsby</p>
+        <div class="profileCard">
+          <div class="imgContainer">
+            <img class="profileCardImg" src="./person4.png" alt="" />
+          </div>
+          <div class="name_container">
+            <h3 class="name">Carlos Tran</h3>
+            <p>The Decorate Gatsby</p>
+          </div>
         </div>
       </section>
     </main>
     <footer id="contact1" name="contact1">
-      <div class="links">
-        <ul>
-          <a href="#home1">Home</a>
-          <a href="#services1">Services</a>
-          <a href="#ourWorks1">Our works</a>
-          <a href="#clients1">Clients</a>
-          <a href="#contact1">Contact</a>
-        </ul>
-      </div>
-      <div class="socials">
-        <h1 class="footorLogo">Edie</h1>
-        <img src="./instagram.svg" alt="instagram" />
-        <img src="./linkedin.svg" alt="linkedin" />
-        <img src="./twitter.svg" alt="twiiter" />
-      </div>
-      <div class="footerEmailContainer">
-        <div class="emailContainer">
-          <label for="email">Want us to contact you?</label>
-          <div class="emailInputContainer">
-            <input type="email" placeholder="Email" />
-            <button>join</button>
+      <div class="footerWrapper">
+        <div class="links">
+          <ul>
+            <a href="#home1">Home</a>
+            <a href="#services1">Services</a>
+            <a href="#ourWorks1">Our works</a>
+            <a href="#clients1">Clients</a>
+            <a href="#contact1">Contact</a>
+          </ul>
+        </div>
+        <div class="socials">
+          <h1 class="footorLogo">Edie</h1>
+          <div class="socialsWrapper">
+            <img src="./instagram.svg" alt="instagram" />
+            <img src="./linkedin.svg" alt="linkedin" />
+            <img src="./twitter.svg" alt="twiiter" />
+          </div>
+        </div>
+        <div class="footerEmailContainer">
+          <div class="emailContainer">
+            <label for="email">Want us to contact you?</label>
+            <div class="emailInputContainer">
+              <input type="email" placeholder="Email" />
+              <button>join</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="attributes">
-        created by Arun - <a href="">devChallenges.io</a>
+        created by <span class="arun">Arun</span> -
+        <a href="">devChallenges.io</a>
       </div>
     </footer>
   </body>
